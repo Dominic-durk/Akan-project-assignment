@@ -8,8 +8,8 @@ Akan name generator is a tool that you can use to determine a akan namebased on 
 ## Project Setup Instructions
 
 To get this project up and running locally, follow these instructions:
-
-1. click on this link below
+use thi link to find my platform
+ https://dominic-durk.github.io/Akan-project-assignment/
 
 
 
