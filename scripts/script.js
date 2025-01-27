@@ -19,11 +19,11 @@ document.getElementById('akanForm').addEventListener('submit', function(event) {
         return;
     }
 
-    // Calculate the day of the week using the formula
-    const m = month < 3 ? month + 12 : month; // Adjust month for Jan and Feb
-    const y = month < 3 ? year - 1 : year; // Adjust year for Jan and Feb
-    const k = y % 100;
-    const j = Math.floor(y / 100);
+   // Calculate the day of the week using the formula
+   const m = month < 3 ? month + 12 : month; // Adjust month for Jan and Feb
+   const y = month < 3 ? year - 1 : year; // Adjust year for Jan and Feb
+   const k = y % 100;
+   const j = Math.floor(y / 100);
 
     const dayOfWeek = (day + Math.floor((13 * (m + 1)) / 5) + k + Math.floor(k / 4) + Math.floor(j / 4) - (2 * j)) % 7;
 
@@ -34,9 +34,9 @@ document.getElementById('akanForm').addEventListener('submit', function(event) {
     // Select the correct Akan name based on gender and day of the week
     let akanName;
     if (gender === 'male') {
-        akanName = maleNames[dayOfWeek];
+        akanName = maleNames[dayOfWeek-1];
     } else {
-        akanName = femaleNames[dayOfWeek];
+        akanName = femaleNames[dayOfWeek-1];
     }
 
     // Display the Akan name to the user
